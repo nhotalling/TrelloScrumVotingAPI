@@ -1,0 +1,43 @@
+{
+    "name": "Trello Scrum Voting API",
+    "version": "0.1",
+    "manifest_version" : 2,
+    "description": "Scrum planning tool - monitor and display effort point votes in Trello",
+    "background" : {
+        "page" : "background.html",
+        "persistent": false
+    },
+    "page_action" :
+    {
+        "default_icon": {
+            "19": "icons/19.png",
+            "38": "icons/38.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://trello.com/b/*"],
+            "css": ["lib/exportpopup.css"],
+			"js": [
+                "lib/jquery-2.1.1.min.js",
+				"lib/exportpopup.js",
+				"lib/trelloui.js",
+                "scripts/main.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "permissions": [
+        "tabs"
+    ],
+    "icons": {
+        "16": "icons/16.png",
+        "48": "icons/48.png",
+        "128": "icons/128.png"
+    },
+    "web_accessible_resources": [
+        "settings/index.html"
+    ],
+    "options_page": "settings/index.html",
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

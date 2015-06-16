@@ -1,0 +1,1 @@
+var APP_KEY = 'YOURKEYHERE'; // get your developer key here: https://trello.com/app-key

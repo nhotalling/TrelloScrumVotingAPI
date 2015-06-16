@@ -1,0 +1,78 @@
+.trello_helper_export_popup {
+    background-color: white;
+    z-index: 1000;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    transform: translate(-50%, -50%); /* Yep! */
+    width: 48%;
+    min-height: 50%;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+    border-bottom-color: #c2c2c2;
+    box-shadow: 0 1px 6px rgba(0,0,0,.15);
+}
+
+.trello_helper_export_popup_body {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+}
+
+.trello_helper_export_popup .button {
+    margin: 10px;
+}
+
+.trello_helper_export_popup .button .right {
+    float: right;
+}
+
+.trello_helper_export_popup textarea {
+    height: 100%;
+}
+
+.votingUserWrapper {
+	float: left;
+	margin: 10px;
+	width: 110px;
+	height: 50px;
+}
+
+.votingUserAvatar {
+	float: left;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align:center;
+}
+
+.imgHelper {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.votingUserAvatar img {
+	vertical-align: middle;
+	max-width: 30px;
+	max-height: 30px;
+	border-radius: 4px;
+}
+
+.votingUserVote {
+	float:left;
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+	font-size: 2em;
+	background-color: lime;
+	line-height: 2em;
+	text-align: center;
+	box-shadow: 0 1px 0 #8c8c8c;
+}
+
+.voteCleared {
+	background-color: #ccc;
+}
