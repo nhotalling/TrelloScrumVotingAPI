@@ -11,13 +11,13 @@ The person who will tally the votes is the only one who needs to install the ext
 - Modify scripts/key.js to include your Trello developer key - get yours at [https://trello.com/app-key](https://trello.com/app-key).
 - Optional - modify the `MONITORING_DURATION` variable in scripts/main.js. The default setting is 5000 ms (5 seconds).
 - In Chrome, browse to [chrome://extensions/](chrome://extensions/), enable Developer mode (checkbox in upper right corner), click the 'Load unpacked extension' button and select the folder where you saved the Trello Scrum Voting API extension.
-- Create a list called "Voting". If you use a different list name, update the variable `VOTING_LIST_NAME` in scripts/main.js to contain the same list name.
+- In Trello, create a list called "Voting". If you use a different list name, update the variable `VOTING_LIST_NAME` in scripts/main.js to contain the same list name.
 - Create a card in the Voting list for each member of your team. Name the card after the team member and assign them to the card.
 
 ###Usage
 - Once the board with the Voting list loads, click the list's menu icon (the circle/down arrow in the upper right corner). The voting popup opens and displays a series of avatars and question marks, indicating that it's waiting for all team members to enter a vote.
 - Team members open their card on the Voting list (either using a computer or the Trello app) and change the card's description to their current effort point vote. As team members update their votes, the voting popup will show a checkmark next to their avatar. **NOTE:** To re-use the same number on a subsequent vote, type a period after the number (or delete the period) in order for Trello to view the card as changed.
-- Once all votes are in, click the Show Votes button to reveal all votes. Monitoring stops until the Clear button is click.
+- Once all votes are in, click the Show Votes button to reveal all votes. Monitoring stops until the Clear button is clicked.
 - Click the Clear button to reset all cards to '?' and await further votes.
 
 ###Can I use this commercially?
